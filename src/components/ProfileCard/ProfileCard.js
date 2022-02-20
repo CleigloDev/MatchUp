@@ -5,10 +5,10 @@ import profile1 from '../../assets/images/profiles/profile1.jpg'
 import profile2 from '../../assets/images/profiles/profile2.jpg'
 import profile3 from '../../assets/images/profiles/profile3.jpg'
 
-import like from '../../assets/images/profiles/like.png'
-import dislike from '../../assets/images/profiles/dislike.png'
-import left from '../../assets/images/profiles/left.png'
-import right from '../../assets/images/profiles/right.png'
+import like from '../../assets/images/icons/like.png'
+import dislike from '../../assets/images/icons/dislike.png'
+import left from '../../assets/images/icons/left.png'
+import right from '../../assets/images/icons/right.png'
 
 
 export default function ProfileCard(props) {
@@ -63,9 +63,9 @@ export default function ProfileCard(props) {
             <div key={image}>
                 <div>
                     <div className='image-selector' onMouseDown={() => changeImage("LEFT")}>
-                        <img src={left} className='arrow-left noSelect' />
+                        <img src={left} className='arrow-left noSelect' draggable={false}/>
                     </div>
-                    <img src={image} className='image-style noSelect' />
+                    <img src={image} className='image-style noSelect' draggable={false}/>
                     <div className={'image-selector image-selector-right'} onMouseDown={() => changeImage("RIGHT")}>
                         <img src={right} className='arrow-right noSelect' />
                     </div>
@@ -73,11 +73,11 @@ export default function ProfileCard(props) {
                 <p className='profile-name'>{name}</p>
                 <p className='profile-info'>{age} anni</p>
                 <div className='buttons-container noSelect'>
-                    <img src={dislike} className='button-size' 
+                    <img src={dislike} className='button-size' draggable={false} 
                         onMouseEnter={() => {showStatusProfile("DISLIKE", true)}} 
                         onMouseLeave={() => {showStatusProfile("DISLIKE", false)}} 
                         onMouseDown={() => {actionProfile("DISLIKE")}}/>
-                    <img src={like} className='button-size' 
+                    <img src={like} className='button-size' draggable={false}
                         onMouseEnter={() => {showStatusProfile("LIKE", true)}} 
                         onMouseLeave={() => {showStatusProfile("LIKE", false)}} 
                         onMouseDown={() => {actionProfile("LIKE")}}/>

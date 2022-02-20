@@ -1,0 +1,51 @@
+.match-history-container {
+    width: 55%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start
+}
+
+.thumb-container {
+    position: relative;
+
+}
+
+.thumb-image {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 10px;
+    border-width: 1px;
+    object-fit: cover;
+    border-style: solid;
+    border-color: gray;
+    margin: 0.3rem;
+}
+
+.thumb-hover {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+}
+
+.thumb-hover:hover {
+    background-color: white;
+    opacity: 0.1;
+}
+
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.noSelect:focus {
+    outline: none !important;
+}
