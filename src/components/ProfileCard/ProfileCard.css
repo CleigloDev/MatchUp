@@ -1,0 +1,142 @@
+.image-position {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-style {
+    height: 25rem;
+    width: 20rem;
+    object-fit: cover;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 0.1px;
+    pointer-events: none;
+}
+
+.profile-name {
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.44);
+}
+
+.profile-info {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    font-size: 23px;
+    color: white;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.44);
+}
+
+.container-like {
+    position: absolute;
+    top: 0rem;
+    left: 75%;
+    display: flex;
+    width: 7rem;
+    height: 3rem;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: forestgreen;
+    border-style: solid;
+    background: #ffffffab;
+    transform: rotate(45deg);
+}
+
+.container-dislike {
+    position: absolute;
+    top: 0rem;
+    left: -2rem;
+    display: flex;
+    width: 7rem;
+    height: 3rem;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: red;
+    border-style: solid;
+    background: #ffffffab;
+    transform: rotate(315deg);
+}
+
+.profile-reaction-like {
+    color: forestgreen;
+    font-size: 30px;
+}
+
+.profile-reaction-dislike {
+    color: red;
+    font-size: 30px;
+}
+
+.buttons-container {
+    width: 23rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -35px;
+    left: -2.6vw;
+}
+
+.button-size {
+    height: 5rem;
+    width: 3rem;
+    object-fit: contain;
+}
+
+.image-selector {
+    height: 25rem;
+    width: 4rem;
+    position: absolute;
+}
+
+.image-selector:hover {
+    background: #ffffff1f;
+}
+
+.image-selector-right {
+    top: 0;
+    right: 0;
+}
+
+.arrow-left {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.noSelect:focus {
+    outline: none !important;
+}
